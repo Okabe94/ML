@@ -18,7 +18,7 @@ import sys
 from pylab import rcParams
 import seaborn as sns
 
-path = 'TextoPrueba.txt'
+path = sys.arg[1]
 text = open(path, encoding='utf-8').read().lower()
 print('Length: ', len(text))
 
